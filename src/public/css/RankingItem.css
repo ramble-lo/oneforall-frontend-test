@@ -1,0 +1,74 @@
+.rankingItem {
+    position: relative;
+}
+
+.rankingItem span {
+    font-size: 18px;
+}
+
+.rankingPosition {
+    display: block;
+    padding: 20px 0;
+    padding-left: 5px;
+    border-radius: 5px;
+}
+
+.rankingPosition .medals {
+    width: 30px;
+    height: 30px;
+    margin-left: 5px;
+    vertical-align: top;
+}
+
+.rankingPosition:hover {
+    background-color: var(--black-alpha-05);
+}
+
+.rankingPosition:active {
+    background-color: var(--black-alpha-15);
+}
+
+.rankingItemListTitle {
+    padding-bottom: 16px;
+}
+
+.rankingItemListTitle span {
+    font-size: 18px;
+}
+
+.rankAccount {
+    float: left;
+    width: 205px;
+    padding-right: 43px;
+    height: 22px;
+    display: flex;
+    align-items: center;
+    color: var(--black);
+}
+
+.rankAccount span {
+    font-size: 20px;
+}
+
+.rankScore {
+    float: left;
+    width: 60px;
+    padding-right: 30px;
+    color: var(--black);
+}
+
+.rankSequence {
+    color: var(--black);
+}
+
+.rankingItemMemberInformation {
+    /* position: relative;
+    z-index: 1; */
+}
+
+.rankingItemMemberInformation .memberInformation {
+    position: absolute;
+    top: 65px;
+    left: -85px;
+    z-index: 100;
+}

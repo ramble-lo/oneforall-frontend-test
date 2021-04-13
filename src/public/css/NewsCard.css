@@ -1,0 +1,537 @@
+@import "common.css";
+
+/*filter*/
+.filter {
+  display: inline-block;
+  margin-top: 95px;
+  box-shadow: rgb(0 0 0 / 5%) 0 0 7px 5px;
+  background-color: #fff;
+  border-radius: 5px;
+}
+
+.filter a {
+  display: inline-block;
+  color: var(--black);
+  padding: 10px;
+}
+
+.filter a:hover {
+  background-color: var(--black-alpha-05);
+}
+
+.filter a:nth-child(1) {
+  /* color: #fff;
+  background-color: var(--navy-blue); */
+  border-radius: 5px 0 0 5px;
+}
+
+.filter a:nth-child(2) {
+  border-right: 1px solid var(--gray-border);
+}
+
+.filter a:nth-child(3) {
+  border-radius: 0 5px 5px 0;
+}
+
+/*content*/
+
+.content {
+  /* padding: 30px 15px 0 15px; */
+  padding-top: 30px;
+}
+
+.NewsCard {
+  flex: 2;
+  width: 100%;
+  padding-top: 15px;
+  margin-right: 50px;
+}
+
+.card {
+  display: block;
+  position: relative;
+  width: 100%;
+  max-width: 1200px;
+  border: 1px solid var(--gray-border);
+  border-radius: 10px;
+  margin: 0;
+  margin: 50px 0;
+  margin-bottom: 70px;
+  background-color: #fff;
+  box-shadow: rgba(0, 0, 0, 0.05) 0 0 7px 5px;
+}
+
+.cardTop {
+  position: absolute;
+  top: -30px;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: 50px;
+}
+
+.scrollingText {
+  display: block;
+  width: 90%;
+  border-radius: 5px;
+  background-color: #fff;
+  box-shadow: 0px 2px 5px 0 var(--gray);
+}
+
+.scrollingText .userComment {
+  border: 0;
+}
+
+.status {
+  display: inline-block;
+  min-width: 50px;
+  line-height: 30px;
+  padding: 5px 10px;
+  margin-right: 10px;
+  background-color: var(--navy-blue);
+  color: #fff;
+  border-radius: 5px;
+  box-shadow: 0px 2px 5px 0 var(--gray);
+  font-size: 1rem;
+}
+
+.cardTop .userComment {
+  margin: 0;
+  padding: 7px 0;
+  padding-left: 15px;
+}
+
+.cardTop .userComment span {
+  border: none;
+  padding: 0;
+}
+
+.postInfo {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 30px;
+  padding: 20px 15px 0 15px;
+}
+
+.userInfo {
+  display: flex;
+  position: relative;
+}
+
+.postData {
+  display: flex;
+  padding: 5px 15px;
+  padding-left: 0;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.postData:hover {
+  background-color: var(--light-gray);
+}
+
+.postData:active {
+  background-color: var(--gray);
+}
+
+.userPhoto {
+  width: 40px;
+  height: 40px;
+  box-sizing: border-box;
+  border: 1px solid var(--gray-border);
+  border-radius: 20px;
+  margin-right: 10px;
+}
+
+.account {
+  display: flex;
+  align-items: baseline;
+  margin-bottom: 5px;
+  font-size: 1rem;
+  font-weight: 700;
+}
+
+.account h3 {
+  margin-right: 5px;
+}
+
+.account p {
+  font-weight: 400;
+  color: var(--light-black);
+}
+
+.articleTime {
+  font-size: 0.75rem;
+}
+
+.history {
+  /* display: inline-block; */
+  background-color: var(--navy-blue);
+  padding: 0 20px;
+  border-radius: 5px;
+}
+
+.history img {
+  margin-top: 10px;
+}
+
+.hashtag {
+  padding: 0 15px;
+  margin-bottom: 10px;
+}
+
+.hashtag a {
+  padding: 0 5px;
+  color: #fff;
+  border-radius: 5px;
+  margin-right: 10px;
+  background-color: var(--sky-blue);
+}
+
+.hashtag a:hover {
+  background-color: var(--navy-blue);
+}
+
+.hashtag a:active {
+  background-color: var(--deep-blue);
+}
+
+.article {
+  width: 100%;
+}
+
+.articleContent {
+  padding: 15px;
+}
+
+.article h3 {
+  font-size: 1.5rem;
+  margin-bottom: 20px;
+  padding: 0 15px;
+}
+
+.article p {
+  display: inline;
+  line-height: 2rem;
+  font-size: 1.18rem;
+  letter-spacing: 0.02rem;
+  margin-bottom: 20px;
+  word-break: break-word;
+  word-wrap: break-word;
+  white-space: pre-wrap;
+}
+
+/* .article>p:nth-child(2) {
+}
+
+.article>p:nth-child(4) {
+} */
+
+.article img {
+  width: 100%;
+}
+
+.article button {
+  display: inline-block;
+  /* padding: 15px; */
+  color: var(--black-alpha-60);
+  font-size: 1rem;
+  font-weight: 400;
+  border: none;
+  background-color: var(--white);
+  cursor: pointer;
+  word-wrap: break-word;
+}
+
+.article button:hover {
+  text-decoration: underline;
+}
+
+.reviewResult {
+  padding: 0 15px;
+  font-weight: 400;
+}
+
+.underReview {
+  font-weight: 400;
+  color: var(--black-alpha-40);
+}
+
+.underReview p {
+  font-size: 1rem;
+}
+
+.report {
+  display: flex;
+  padding: 0 15px;
+  margin: 15px 0;
+  color: var(--black);
+}
+
+.report .reportButton {
+  display: flex;
+  margin-right: 10px;
+  cursor: pointer;
+}
+
+.report .reportButton:hover {
+  text-decoration: underline;
+}
+
+.report .reportButton svg {
+  width: 22px;
+  height: 22px;
+}
+
+.report .reportButton div {
+  font-size: 16px;
+}
+
+.reportArticleAdress {
+  color: var(--black-alpha-60);
+}
+
+.like {
+  display: flex;
+  /* margin: 0 16px; */
+  /* justify-content: space-between; */
+  height: 40px;
+  border: 1px solid var(--gray-border);
+  border-right: 0;
+  border-left: 0;
+}
+
+.border-b-0 {
+  border-bottom: 0;
+}
+
+.like div {
+  display: inline-block;
+  flex: 1;
+  height: 40px;
+  font-weight: 700;
+}
+
+.like div button {
+  display: inline-block;
+  cursor: pointer;
+  color: var(--black-alpha-60);
+  font-weight: 700;
+  text-align: center;
+  line-height: 40px;
+  height: 100%;
+  width: 100%;
+  border: 0;
+  border-radius: 5px;
+  background-color: #fff;
+  transition: background-color 0.2s ease-in;
+}
+
+.like div button:hover {
+  background-color: var(--light-gray);
+}
+
+.like div button:active {
+  transform: scale(0.95);
+}
+
+/*comment*/
+.comment {
+  border-radius: 5px;
+  display: block;
+}
+
+.comment a {
+  font-size: 1rem;
+  color: var(--black);
+  padding-left: 10px;
+  font-weight: 700;
+}
+
+.comment a:hover {
+  text-decoration: underline;
+}
+
+.userInput {
+  display: flex;
+  justify-content: space-between;
+  height: 40px;
+  margin: 16px 0;
+  padding: 0 16px;
+}
+
+.userInput input {
+  width: 100%;
+  padding: 0 10px;
+  color: var(--black);
+  background-color: var(--gray);
+  border: none;
+  border-radius: 5px;
+  outline: none;
+  border: 2px solid var(--gray);
+  transition: border 0.2s ease-in, background-color 0.2s ease-in;
+}
+
+.userInput input:hover {
+  border: 2px solid var(--gray-border);
+}
+
+.userInput input:focus {
+  border: 2px solid var(--sky-blue);
+  background-color: #fff;
+}
+
+.userInput button {
+  display: inline;
+  color: #fff;
+  width: 10%;
+  min-width: 50px;
+  text-align: center;
+  line-height: 40px;
+  padding: 0 10px;
+  margin-left: 10px;
+  border-radius: 5px;
+  border: none;
+  background-color: var(--sky-blue);
+  transition: background-color 0.2s ease-in;
+}
+
+.userInput button:hover {
+  color: #fff;
+  background-color: var(--navy-blue);
+  text-decoration: none;
+}
+
+.userInput button:active {
+  color: #fff;
+  background-color: var(--deep-blue);
+  text-decoration: none;
+}
+
+.userComment {
+  display: flex;
+  justify-content: space-between;
+  border-top: 1px solid var(--gray);
+  border-bottom: 0;
+}
+
+.comment .userComment:nth-last-child(2) {
+  border-bottom: 1px solid var(--gray);
+}
+
+.userComment span {
+  width: 100%;
+  padding: 16px;
+  border-radius: 10px;
+}
+
+.comment .userComment span {
+  /* background-color: var(--light-blue); */
+  border-bottom: 0;
+  border-radius: 0;
+}
+
+.userComment span .user-id {
+  font-size: 0.875rem;
+}
+
+.userComment span p {
+  font-size: 1rem;
+  margin: 0;
+  width: 100%;
+}
+
+.timeCode {
+  position: relative;
+  width: 10%;
+  font-size: 0.75rem;
+  margin-right: 20px;
+  margin-left: 10px;
+}
+
+.timeCode p {
+  position: absolute;
+  bottom: 0;
+}
+
+.moreComment {
+  display: inline-block;
+  width: 100%;
+  cursor: pointer;
+  padding: 16px 0;
+  padding-left: 16px;
+  text-align: start;
+  background-color: var(--white);
+  border: none;
+  border-radius: 5px;
+}
+
+.moreComment:hover {
+  text-decoration: underline;
+}
+
+/*vote*/
+
+.vote {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.vote a {
+  display: inline-block;
+  color: #fff;
+  padding: 10px 15px;
+  border-radius: 5px;
+  background-color: var(--red);
+}
+
+.vote a:first-child {
+  margin-right: 20px;
+  background-color: var(--green);
+}
+
+.voteResult {
+  width: 300px;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.voteResult a {
+  width: 70%;
+  display: inline-block;
+  background-color: var(--red);
+  text-align: center;
+  padding: 10px 15px;
+  border-radius: 0 5px 5px 0;
+}
+
+.voteResult a:first-child {
+  width: 30%;
+  background-color: var(--green);
+  border-radius: 5px 0 0 5px;
+}
+
+.memberInformationCard {
+  display: block;
+}
+
+@media screen and (max-width: 1000px) {
+  .NewsCard {
+    margin-right: 0;
+  }
+
+  .card {
+    margin-right: 0;
+    margin-left: 0;
+    width: 100%;
+    border: 0;
+  }
+
+  .status {
+    min-width: 42px;
+  }
+
+  .userInput a {
+    display: none;
+  }
+}

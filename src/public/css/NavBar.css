@@ -1,0 +1,422 @@
+.navBar {
+    width: 100%;
+    box-shadow: rgba(0, 0, 0, 0.2) 0 3px 5px;
+    background-color: #fff;
+    position: fixed;
+    z-index: 10;
+    transition: top 0.3s;
+}
+
+.navContent {
+    display: flex;
+    align-items: center;
+    /* padding: 10px 0; */
+}
+
+.responsiveNav {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    transition: right 1s;
+}
+
+.linkList {
+    display: flex;
+    align-items: center;
+}
+
+.linkList div {
+    display: inline-block;
+    color: var(--black);
+    padding: 0 30px;
+    height: 60px;
+    line-height: 60px;
+    font-size: 18px;
+    margin-left: 30px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.linkList div:not(:first-child) {
+    margin-left: 0;
+}
+
+.linkList div:hover {
+    background-color: var(--black-alpha-05);
+}
+
+.logo {
+    cursor: pointer;
+    height: 100%;
+}
+
+.navRight {
+    width: 450px;
+    align-self: flex-end;
+}
+
+.navFeature {
+    display: flex;
+    position: relative;
+}
+
+.searchBarContainer {
+    display: flex;
+}
+
+.searchBar {
+    display: block;
+    width: 240px;
+    height: 40px;
+    border-radius: 0 5px 5px 0;
+    line-height: 40px;
+    background-repeat: no-repeat;
+    padding-left: 20px;
+    color: var(--black);
+    font-size: 16px;
+    letter-spacing: 0.8px;
+    box-sizing: border-box;
+    background-color: var(--light-gray);
+    border: 2px solid var(--light-gray);
+    transition: border .2s ease-in, background-color .2s ease-in
+}
+
+.searchBar:hover {
+    border: 2px solid var(--gray-border);
+}
+
+.searchBar:focus {
+    border: 2px solid var(--sky-blue);
+    background-color: #fff;
+}
+
+.searchBarIcon {
+    display: inline-block;
+    background-image: url('../svg/SearchIcon.svg');
+    width: 40px;
+    height: 40px;
+    background-repeat: no-repeat;
+    background-size: 70% 70%;
+    background-position: center center;
+    background-color: #fff;
+    border: none;
+}
+
+
+.signupButton {
+    display: block;
+    margin-left: 32px;
+    width: 60px;
+    height: 40px;
+    border-radius: 5px;
+    background-color: var(--navy-blue);
+    border: none;
+    font-size: 16px;
+    color: #fff;
+    line-height: 40px;
+    cursor: pointer;
+    transition: background-color .2s ease-in;
+}
+
+
+.signupButton:hover {
+    background-color: var(--sky-blue);
+}
+
+.signinButton {
+    margin-left: 20px;
+    width: 60px;
+    height: 40px;
+    color: var(--black);
+    border: 1px solid var(--light-gray);
+    background-color: var(--light-gray);
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 40px;
+    color: var(--black);
+    cursor: pointer;
+    transition: color .2s ease-in, background-color .2s ease-in;
+}
+
+.signinButton:hover {
+    background-color: var(--gray);
+}
+
+.navDisplayBlock {
+    display: block;
+}
+
+.navDisplayNone {
+    display: none;
+}
+
+.navUserInfo {
+    display: flex;
+    cursor: pointer;
+}
+
+.navUserInfoID {
+    margin-left: 10px;
+    padding: 0 20px;
+    line-height: 40px;
+}
+
+/* .navUserInfo:hover .navUserInfoID {
+    background-color: var(--light-gray);
+    border-radius: 5px;
+}
+
+.navUserInfo:active .navUserInfoID {
+    background-color: var(--gray);
+    border-radius: 5px;
+} */
+
+.navUserInfoPhoto {
+    width: 40px;
+    height: 40px;
+    box-sizing: border-box;
+    margin-left: 10px;
+    border: 1px solid var(--gray-border);
+    border-radius: 20px;
+}
+
+.navUserInfo:hover .navUserInfoPhoto {
+    border: 2px solid var(--gray-border);
+}
+
+.memberList {
+    position: absolute;
+    top: 50px;
+    right: 0;
+    background-color: #fff;
+    width: 150px;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 2px 5px 15px 1px var(--gray);
+    z-index: 1;
+}
+
+.fakeDiv {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: -1;
+}
+
+.memberListItem {
+    display: flex;
+    padding: 10px;
+    color: var(--black);
+    cursor: pointer;
+}
+
+.memberListItem svg {
+    padding-right: 5px;
+}
+
+.memberListBorder {
+    height: 1px;
+    width: 100%;
+    margin: 10px 0;
+    padding: 0;
+    background-color: var(--gray-border);
+}
+
+.memberListItem:hover {
+    background-color: var(--light-gray);
+    border-radius: 5px;
+}
+
+.memberListItem:active {
+    background-color: var(--gray);
+    border-radius: 5px;
+}
+
+.memberListItemTitle {
+    font-size: 14px;
+}
+
+.closeNavButton {
+    display: none;
+}
+
+
+@media screen and (max-width: 810px) {
+    .navContent {
+        justify-content: space-between;
+        padding: 5px;
+        position: relative;
+    }
+
+    .responsiveNav {
+        position: fixed;
+        background-color: #fff;
+        top: 0px;
+        right: 0;
+        padding: 10px 0;
+        z-index: 1500;
+        width: 70vw;
+        height: 100vh;
+        flex-direction: column-reverse;
+        justify-content: flex-end;
+        box-shadow: rgb(0 0 0 / 5%) 0 0 7px 5px;
+        box-sizing: border-box;
+    }
+
+    .navFeature {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .navUserInfo {
+        width: 100%;
+        height: 60px;
+        align-items: center;
+        padding-left: 15px;
+        box-sizing: border-box;
+        display: none;
+    }
+
+    .signupButton,
+    .signinButton {
+        font-size: 18px;
+        width: 100%;
+        text-align: start;
+        padding-left: 15px;
+        height: 60px;
+        margin-left: 0;
+        color: var(--black);
+        background-color: var(--white);
+        transition: none;
+        border-radius: 5px;
+        border: 0;
+    }
+
+    .signinButton {
+        color: var(--deep-blue);
+    }
+
+    .signupButton:hover,
+    .signinButton:hover {
+        background-color: var(--light-gray);
+    }
+
+    .rankingTable {
+        display: none;
+    }
+
+    .navUserInfo img {
+        display: none;
+    }
+
+    .navUserInfoID {
+        font-size: 1.25rem;
+        padding: 0;
+        margin-left: 0;
+    }
+
+    .searchBarContainer {
+        height: 60px;
+        align-items: center;
+        padding: 0 15px;
+    }
+
+    .searchBarIcon {
+        display: none;
+    }
+
+    .searchBar {
+        width: 100%;
+        border-radius: 5px;
+    }
+
+    .linkList {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .linkList div {
+        width: 100%;
+        margin: 0;
+        text-align: start;
+        padding: 0;
+        padding-left: 15px;
+        box-sizing: border-box;
+    }
+
+    .hambergurButton {
+        width: 30px;
+        height: 30px;
+        padding: 10px;
+        /* background-color: green; */
+    }
+
+    .hambergurButton svg {
+        width: 100%;
+        height: 100%;
+        color: var(--navy-blue);
+    }
+
+    .hambergurButton:active svg {
+        background-color: var(--light-gray);
+        border-radius: 5px;
+        transform: scale(.9, .9);
+    }
+
+    .closeNavButton {
+        display: block;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100vw;
+        height: 100vh;
+        background-color: var(--black-alpha-80);
+        transition: opacity 1s;
+    }
+
+    .closeNavButton svg {
+        display: inline-block;
+        position: absolute;
+        left: 16px;
+        top: 25px;
+        border-radius: 5px;
+        z-index: 10;
+        color: var(--white);
+    }
+
+    .closeNavButton:active svg {
+        transform: scale(.8, .8);
+    }
+
+    .memberList {
+        position: static;
+        box-shadow: none;
+        width: 100%;
+        padding: 0;
+        padding-left: 7px;
+        box-sizing: border-box;
+    }
+
+    .navFeature .phoneDisplay {
+        display: block !important;
+    }
+
+    .memberListItem {
+        padding: 17.5px 0;
+        padding-left: 15px;
+        align-items: center;
+    }
+
+    .memberListItemTitle {
+        font-size: 18px;
+    }
+}
+
+/* @media screen and (max-width: 360px) {
+    .logo {
+        display: none;
+    }} */

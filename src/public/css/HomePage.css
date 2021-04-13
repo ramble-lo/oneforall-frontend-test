@@ -1,0 +1,15 @@
+.homePageContainer {
+    overflow: auto;
+}
+
+.homePageContent {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+@media screen and (max-width: 1000px) {
+    .secondaryElement {
+        display: none;
+    }
+}

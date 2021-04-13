@@ -1,0 +1,388 @@
+@import "common.css";
+
+.memberContainer {
+    display: flex;
+    justify-content: space-between;
+    margin: 30px auto;
+    max-width: 880px;
+}
+
+.filter button {
+    display: inline-block;
+    color: var(--black);
+    padding: 10px;
+    border: none;
+    background-color: var(--white);
+    cursor: pointer;
+}
+
+.filter button:hover {
+    background-color: var(--black-alpha-05);
+}
+
+.filter button:nth-child(1) {
+    /* color: #fff;
+  background-color: var(--navy-blue); */
+    border-radius: 5px 0 0 5px;
+}
+
+.filter button:nth-child(2) {
+    border-right: 1px solid var(--gray-border);
+}
+
+.filter button:nth-child(3) {
+    border-radius: 0 5px 5px 0;
+}
+
+.personalInfo {
+    width: 100%;
+    height: 700px;
+    border: solid 1.5px var(--gray-border);
+    border-radius: 5px;
+    background-color: #fff;
+    box-shadow: var(--black-alpha-05) 0 0 7px 5px;
+    flex: 1;
+    margin-right: 20px;
+    box-sizing: border-box;
+}
+
+.personalPhoto {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.personalPhoto>img {
+    border-radius: 75px;
+    width: 150px;
+    height: 150px;
+}
+
+.infoContent {
+    margin: 40px auto;
+}
+
+.infoContent>p {
+    font-size: 16px;
+    letter-spacing: 1.1px;
+    color: var(--black-alpha-40);
+    letter-spacing: 1.75px;
+    padding: 0 20px;
+}
+
+.infoContent>p:nth-child(even) {
+    letter-spacing: 1.75px;
+    color: var(--black);
+    padding-top: 5px;
+    padding-bottom: 15px;
+    border-bottom: solid 1px var(--gray-border);
+    word-wrap: break-word;
+}
+
+.infoContent>p:nth-child(odd) {
+    padding-top: 15px;
+}
+
+.infoContent>p:first-child {
+    border-top: solid 1px var(--gray-border);
+}
+
+.memberRight {
+    display: flex;
+    flex-direction: column;
+    min-width: 360px;
+    flex: 1;
+}
+
+.memberTable {
+    width: 100%;
+    padding: 0 15px;
+    border: solid 1px var(--gray-border);
+    border-radius: 5px;
+    align-content: flex-end;
+    background-color: #fff;
+    box-shadow: var(--black-alpha-05) 0 0 7px 5px;
+    box-sizing: border-box;
+    flex: 1;
+}
+
+.memberTable>p {
+    text-align: center;
+    font-size: 25px;
+    margin-top: 15px;
+    letter-spacing: 1.75px;
+    white-space: nowrap;
+    color: var(--black);
+}
+
+.tablePosition {
+    width: 100%;
+    margin: 20px auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.memberScore {
+    flex: 1;
+}
+
+.memberFollower {
+    flex: 1;
+    border-left: solid 1px var(--gray-border);
+}
+
+.memberScore p:nth-child(1),
+.memberFollower p:nth-child(1),
+.memberPost p:nth-child(1) {
+    font-size: 16px;
+    color: var(--black-alpha-40);
+    letter-spacing: 1.05px;
+    text-align: center;
+}
+
+.memberScore p:nth-child(2),
+.memberFollower p:nth-child(2),
+.memberPost p:nth-child(2) {
+    font-size: 45px;
+    color: var(--navy-blue);
+    letter-spacing: 2.05px;
+    text-align: center;
+    font-weight: 500;
+}
+
+.memberInform {
+    width: 100%;
+    border-radius: 5px;
+    border: solid 1px var(--gray-border);
+    margin-top: 20px;
+    padding: 0 5px;
+    background-color: #fff;
+    box-shadow: var(--black-alpha-05) 0 0 7px 5px;
+    box-sizing: border-box;
+    overflow: scroll;
+    overflow-x: hidden;
+    flex: 1;
+}
+
+.memberInform::-webkit-scrollbar {
+    width: 10px;
+    /* width of the entire scrollbar */
+}
+
+.memberInform::-webkit-scrollbar-track {
+    background: rgb(255, 255, 255, 0);
+    /* color of the tracking area */
+}
+
+.memberInform::-webkit-scrollbar-thumb {
+    background-color: var(--black-alpha-15);
+    /* color of the scroll thumb */
+    border-radius: 5px;
+    /* roundness of the scroll thumb */
+    /* border: 3px solid orange; */
+    /* creates padding around scroll thumb */
+}
+
+.memberInform>p,
+.adviseMission>p {
+    color: var(--black-alpha-40);
+    /* margin: 15px 0 10px 20px; */
+    margin-top: 10px;
+    padding-left: 16px;
+}
+
+.adviseMission>p,
+.adviseMission .informContainer {
+    padding: 0;
+}
+
+.informContainer,
+.missionContent,
+.voteContainer {
+    margin: 10px 0;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.informContainer:hover {
+    background-color: var(--black-alpha-05);
+}
+
+.informContainer:active {
+    background-color: var(--black-alpha-15);
+}
+
+.informContainer {
+    padding: 5px 16px;
+}
+
+.informContainer p:nth-child(1),
+.missionContent>p,
+.voteContainer p:nth-child(1) {
+    font-size: 14px;
+    color: var(--black);
+}
+
+.informContainer p:nth-child(2),
+.voteContainer p:nth-child(2) {
+    color: var(--black-alpha-40);
+    font-size: 14px;
+}
+
+.missionBtn {
+    width: 100%;
+    text-align: center;
+    margin: 15px 0;
+}
+
+.missionBtn>button {
+    width: 100%;
+    line-height: 40px;
+    border: none;
+    font-size: 16px;
+    letter-spacing: 1.75px;
+    background-color: var(--black-alpha-05);
+    color: var(--black);
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.missionBtn>button:hover {
+    background-color: var(--black-alpha-15);
+}
+
+.missionBtn>button:active {
+    background-color: var(--black-alpha-15);
+    transform: scale(0.95)
+}
+
+.memberPost {
+    width: 200px;
+    margin: 25px auto;
+}
+
+.memberInformation {
+    padding: 10px 25px;
+    background-color: #fff;
+    box-shadow: 0 4px 10px 0 var(--gray);
+    border-radius: 5px;
+    color: var(--black);
+    position: absolute;
+    top: 50px;
+    left: 0;
+    max-width: 100vw;
+}
+
+.memberInformationPersonal {
+    display: flex;
+    align-items: center;
+}
+
+.memberInformationPersonal .userPhoto {
+    width: 60px;
+    height: 60px;
+    border-radius: 30px;
+}
+
+.memberInformation .publicKey {
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+    padding: 5px 10px;
+    padding-left: 0;
+    margin-top: 5px;
+    cursor: pointer;
+}
+
+.memberInformation .publicKey:hover {
+    background-color: var(--light-gray);
+    border-radius: 5px;
+}
+
+.memberInformation .publicKey:active {
+    background-color: var(--gray);
+}
+
+.memberInformation .publicKey p {
+    margin-right: 10px;
+}
+
+.memberInformation.userAccountID {
+    display: flex;
+    align-items: center;
+}
+
+.memberInformation .userAccount {
+    margin-left: 30px;
+}
+
+.memberInformation .userAccount p {
+    display: inline-block;
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.memberInformationPersonal .medals {
+    width: 30px;
+    height: 30px;
+    margin-left: 5px;
+    vertical-align: top;
+}
+
+.memberInformation .userAccount p:nth-child(2),
+.memberInformation .userAccount p:nth-child(3) {
+    display: block;
+    font-size: 16px;
+    font-weight: 400;
+    padding: 5px 0;
+}
+
+.memberInformation a {
+    display: inline-block;
+    color: #fff;
+    padding: 5px 15px;
+    margin-top: 10px;
+    background-color: var(--sky-blue);
+    transition: background-color .2s ease-in;
+    border-radius: 5px;
+}
+
+.memberInformation a:hover {
+    background-color: var(--navy-blue);
+}
+
+.memberInformation a:active {
+    background-color: var(--deep-blue);
+}
+
+.memberInformation .close {
+    position: absolute;
+    display: inline-block;
+    right: 10px;
+    top: 10px;
+    cursor: pointer;
+}
+
+.memberInformation .close:hover svg {
+    background-color: var(--light-gray);
+    border-radius: 5px;
+}
+
+.memberInformation .close:active svg {
+    background-color: var(--gray);
+    border-radius: 5px;
+}
+
+@media screen and (max-width: 810px) {
+    .memberContainer {
+        flex-direction: column;
+    }
+
+    .infoContent>p {
+        font-size: 14px;
+    }
+
+    .memberRight {
+        margin-top: 20px;
+    }
+}
