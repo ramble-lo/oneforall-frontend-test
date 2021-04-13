@@ -1,0 +1,36 @@
+{
+  "files": {
+    "main.css": "/oneforall-frontend-test/static/css/main.e04be76f.chunk.css",
+    "main.js": "/oneforall-frontend-test/static/js/main.83037e53.chunk.js",
+    "main.js.map": "/oneforall-frontend-test/static/js/main.83037e53.chunk.js.map",
+    "runtime-main.js": "/oneforall-frontend-test/static/js/runtime-main.ed6fd3bf.js",
+    "runtime-main.js.map": "/oneforall-frontend-test/static/js/runtime-main.ed6fd3bf.js.map",
+    "static/js/2.00ef157a.chunk.js": "/oneforall-frontend-test/static/js/2.00ef157a.chunk.js",
+    "static/js/2.00ef157a.chunk.js.map": "/oneforall-frontend-test/static/js/2.00ef157a.chunk.js.map",
+    "index.html": "/oneforall-frontend-test/index.html",
+    "static/css/main.e04be76f.chunk.css.map": "/oneforall-frontend-test/static/css/main.e04be76f.chunk.css.map",
+    "static/js/2.00ef157a.chunk.js.LICENSE.txt": "/oneforall-frontend-test/static/js/2.00ef157a.chunk.js.LICENSE.txt",
+    "static/media/HistoryIcon.03e31126.svg": "/oneforall-frontend-test/static/media/HistoryIcon.03e31126.svg",
+    "static/media/Logo.84a2228d.svg": "/oneforall-frontend-test/static/media/Logo.84a2228d.svg",
+    "static/media/NavBar.css": "/oneforall-frontend-test/static/media/SearchIcon.3478964f.svg",
+    "static/media/articleImg.ca62684c.jpg": "/oneforall-frontend-test/static/media/articleImg.ca62684c.jpg",
+    "static/media/audience.ec2f7505.jpg": "/oneforall-frontend-test/static/media/audience.ec2f7505.jpg",
+    "static/media/author.b6d1d04b.jpg": "/oneforall-frontend-test/static/media/author.b6d1d04b.jpg",
+    "static/media/copper10.43f12b3a.png": "/oneforall-frontend-test/static/media/copper10.43f12b3a.png",
+    "static/media/copper30.d790059e.png": "/oneforall-frontend-test/static/media/copper30.d790059e.png",
+    "static/media/gold200.7665b3de.png": "/oneforall-frontend-test/static/media/gold200.7665b3de.png",
+    "static/media/gold500.dca01657.png": "/oneforall-frontend-test/static/media/gold500.dca01657.png",
+    "static/media/inspector.e320bae0.jpg": "/oneforall-frontend-test/static/media/inspector.e320bae0.jpg",
+    "static/media/red_normal.98d99560.png": "/oneforall-frontend-test/static/media/red_normal.98d99560.png",
+    "static/media/silver120.d990c342.png": "/oneforall-frontend-test/static/media/silver120.d990c342.png",
+    "static/media/silver70.626e581f.png": "/oneforall-frontend-test/static/media/silver70.626e581f.png",
+    "static/media/snow-normal.48876df6.png": "/oneforall-frontend-test/static/media/snow-normal.48876df6.png",
+    "static/media/snow_bad.927fff35.png": "/oneforall-frontend-test/static/media/snow_bad.927fff35.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.ed6fd3bf.js",
+    "static/js/2.00ef157a.chunk.js",
+    "static/css/main.e04be76f.chunk.css",
+    "static/js/main.83037e53.chunk.js"
+  ]
+}
